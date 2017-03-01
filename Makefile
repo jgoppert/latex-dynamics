@@ -10,6 +10,7 @@ install: uninstall dynamics.sty dynamics.pdf
 	sudo install -m555 dynamics.ins /usr/local/share/texmf/tex/latex/dynamics/dynamics.ins
 	sudo install -m555 dynamics.sty /usr/local/share/texmf/tex/latex/dynamics/dynamics.sty
 	sudo install -m555 dynamics.pdf /usr/local/share/texmf/tex/latex/dynamics/dynamics.pdf
+	install -m555 dynamics.cwl ~/.config/texstudio
 	cd /usr/local/share/texmf && sudo mktexlsr
 
 uninstall:

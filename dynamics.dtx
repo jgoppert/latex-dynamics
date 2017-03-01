@@ -43,7 +43,7 @@
 %</driver>
 % \fi
 %
-% \CheckSum{43}
+% \CheckSum{49}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -96,6 +96,12 @@
 %
 %
 % \DescribeMacro{\velg}
+%
+%
+% \DescribeMacro{\acc}
+%
+%
+% \DescribeMacro{\accg}
 %
 %
 % \DescribeMacro{\quat}
@@ -152,7 +158,7 @@
 {measdot}{\leftidx{^{#3}_{#4}}{\dot{\tilde{#2}}}^{#5}_{#6}}
 {est}{\leftidx{^{#3}_{#4}}{\hat{#2}}^{#5}_{#6}}
 {estdot}{\leftidx{^{#3}_{#4}}{\dot{\hat{#2}}}^{#5}_{#6}}
-}[\PackageError{tree}{Undefined option to vect: #1}{}]%
+}[\PackageError{dynamics}{Undefined option to vect: #1}{}]%
 }
 %    \end{macrocode}
 % \end{macro}
@@ -184,6 +190,21 @@
 \newcommand{\velg}[4]{\vect{#1}{V}{#2}{}{#3}{#4}}
 %    \end{macrocode}
 % \end{macro}
+%
+%
+% \begin{macro}{\acc}
+%    \begin{macrocode}
+\newcommand{\acc}[5]{\vect{#1}{A}{#2}{}{#3#4}{#5}}
+%    \end{macrocode}
+% \end{macro}
+%
+%
+% \begin{macro}{\accg}
+%    \begin{macrocode}
+\newcommand{\accg}[4]{\vect{#1}{A}{#2}{}{#3}{#4}}
+%    \end{macrocode}
+% \end{macro}
+%
 %
 %
 % \begin{macro}{\quat}
