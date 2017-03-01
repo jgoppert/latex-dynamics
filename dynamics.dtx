@@ -43,7 +43,7 @@
 %</driver>
 % \fi
 %
-% \CheckSum{49}
+% \CheckSum{52}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -105,6 +105,9 @@
 %
 %
 % \DescribeMacro{\quat}
+%
+%
+% \DescribeMacro{\quatinv}
 %
 %
 % \DescribeMacro{\dcm}
@@ -213,6 +216,11 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \begin{macro}{\quatinv}
+%    \begin{macrocode}
+\newcommand{\quatinv}[3]{\vect{#1}{q}{}{}{-1}{#2#3}}
+%    \end{macrocode}
+% \end{macro}
 %
 % \begin{macro}{\dcm}
 %    \begin{macrocode}
