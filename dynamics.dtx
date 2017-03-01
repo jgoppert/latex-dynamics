@@ -43,7 +43,7 @@
 %</driver>
 % \fi
 %
-% \CheckSum{52}
+% \CheckSum{53}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -157,10 +157,10 @@
 \IfEqCase{#1}{
 {true}{\leftidx{^{#3}_{#4}}{\vec{#2}}^{#5}_{#6}}
 {truedot}{\leftidx{^{#3}_{#4}}{\dot{\vec{#2}}}^{#5}_{#6}}
-{meas}{\leftidx{^{#3}_{#4}}{\tilde{#2}}^{#5}_{#6}}
-{measdot}{\leftidx{^{#3}_{#4}}{\dot{\tilde{#2}}}^{#5}_{#6}}
-{est}{\leftidx{^{#3}_{#4}}{\hat{#2}}^{#5}_{#6}}
-{estdot}{\leftidx{^{#3}_{#4}}{\dot{\hat{#2}}}^{#5}_{#6}}
+{est}{\leftidx{^{#3}_{#4}}{\tilde{#2}}^{#5}_{#6}}
+{estdot}{\leftidx{^{#3}_{#4}}{\dot{\tilde{#2}}}^{#5}_{#6}}
+{unit}{\leftidx{^{#3}_{#4}}{\hat{#2}}^{#5}_{#6}}
+{unitdot}{\leftidx{^{#3}_{#4}}{\dot{\hat{#2}}}^{#5}_{#6}}
 }[\PackageError{dynamics}{Undefined option to vect: #1}{}]%
 }
 %    \end{macrocode}
@@ -218,7 +218,7 @@
 %
 % \begin{macro}{\quatinv}
 %    \begin{macrocode}
-\newcommand{\quatinv}[3]{\vect{#1}{q}{}{}{-1}{#2#3}}
+\newcommand{\quatinv}[3]{\vect{#1}{q}{}{}{\ -1}{#2#3}}
 %    \end{macrocode}
 % \end{macro}
 %
