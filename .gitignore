@@ -1,0 +1,8 @@
+*.glo
+*.sty
+*.log
+*.pdf
+*.aux
+*.idx
+*.zip
+dynamics/
